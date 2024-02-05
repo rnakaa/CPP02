@@ -23,7 +23,9 @@ int main( void ) {
 		if (!(f1 >= f2))
 			std::cout << ">= test passed" << std::endl;
 		if (!(f1 == f2))
-			std::cout << "= test passed" << std::endl;
+			std::cout << "== test passed" << std::endl;
+		if (f1 != f2)
+			std::cout << "!= test passed" << std::endl;
 
 		std::cout << "" << std::endl;
 		Fixed f3 = f1 + f2;
@@ -52,7 +54,7 @@ int main( void ) {
 		std::cout << a << std::endl;
 		std::cout << b << std::endl;
 		std::cout << Fixed::max( a, b ) << std::endl;
-		std::cout << "a";
+		std::cout << "a\n";
 	}
 	// fdsal;nfasdofasdnoijasdfasdibvapisdfhubapsfdasduifpauhwef
 	return (0);

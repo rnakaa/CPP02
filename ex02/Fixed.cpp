@@ -67,6 +67,11 @@ bool Fixed::operator==(const Fixed &cp) const{
 	return (this->toFloat() == cp.toFloat());
 }
 
+bool Fixed::operator!=(const Fixed &cp) const{
+	return (this->toFloat() != cp.toFloat());
+}
+
+
 int Fixed::getRawBits(void) const{
 	return (this->_integer);
 }

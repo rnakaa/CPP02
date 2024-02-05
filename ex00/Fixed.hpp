@@ -7,19 +7,9 @@ class Fixed{
 		static const int  bits = 8;
 	public:
 		Fixed();
-		Fixed(Fixed &cp);
-		Fixed &operator=(Fixed &cp);
+		Fixed(const Fixed &cp);
+		Fixed &operator=(const Fixed &cp);
 		~Fixed();
-		int getRawBits(void);
+		int getRawBits(void) const;
 		void setRawBits(int setInt);
 };
-
-//Fixed a, beta;
-//a = b;
-//
-//Fixed a;
-//a;ladksj
-//a dsaf 
-//
-//Fixed b(a);
-// b = a;
