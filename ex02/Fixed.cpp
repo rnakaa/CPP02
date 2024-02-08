@@ -99,6 +99,18 @@ const Fixed &Fixed::max(const Fixed &f1, const Fixed &f2){
 	return (f2);
 }
 
+Fixed &Fixed::min(Fixed &f1, Fixed &f2){
+	if (f1 < f2)
+		return (f1);
+	return (f2);
+}
+
+Fixed &Fixed::max(Fixed &f1, Fixed &f2){
+	if (f1 > f2)
+		return (f1);
+	return (f2);
+}
+
 Fixed &Fixed::operator++(){
 	this->_integer += 1;
 	return *this;
